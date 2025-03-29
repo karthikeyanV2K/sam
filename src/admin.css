@@ -1,0 +1,171 @@
+/* Admin Panel Styles */
+:root {
+  --background-dark: rgb(17, 16, 16);
+  --gold: #FFD700;
+  --gold-hover: #FFC000;
+  --text-light: #ffffff;
+  --text-gray: #a0a0a0;
+  --border-color: #333333;
+  --input-bg: #222222;
+}
+
+.admin-wrapper {
+
+  min-height: 100vh;
+  color: var(--text-light);
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .admin-wrapper {
+    grid-template-columns: 1fr 1.5fr;
+    padding: 3rem;
+  }
+}
+
+.form-div {
+
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-div h2 {
+  color: var(--gold);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.form-div form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.form-div select,
+.form-div input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  background-color: var(--input-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--text-light);
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-div input{
+    
+   width: 93%;
+  
+}
+
+.form-div select:focus,
+.form-div input:focus {
+  border-color: var(--gold);
+  outline: none;
+}
+
+.form-div select option {
+  background-color: var(--background-dark);
+}
+
+.image-choose {
+  border: 2px dashed var(--gold);
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.image-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.image-preview img {
+  border-radius: 8px;
+  border: 2px solid var(--gold);
+}
+
+button {
+  background-color: var(--gold);
+  color: var(--background-dark);
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--gold-hover);
+}
+
+.delete-item {
+  background-color: rgba(255, 255, 255, 0.222);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.delete-item h2 {
+  color: var(--gold);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.delete-item h6 {
+  color: var(--gold);
+  font-size: 1.2rem;
+  margin: 1.5rem 0 1rem;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+.delete-item ol {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.delete-item li {
+
+  padding: 1rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.delete-item li p {
+  color: var(--text-light);
+  margin: 0;
+  text-align: center;
+}
+
+.delete-item li img {
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+  object-fit: cover;
+  width: 100px;
+  height: 100px;
+}
+
+.delete-item button {
+  background-color: #ff4444;
+}
+
+.delete-item button:hover {
+  background-color: #ff0000;
+}

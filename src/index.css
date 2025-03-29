@@ -5,6 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: url(./images/Gold_Black_Elegant_Letter_C_S_Logo_20250324_183945_0000_1_-removebg-preview-fotor-enhance-20250324184820-removebg-preview.png) no-repeat center center fixed;
+  background-size:contain;
+  height: 100vh; /* Full viewport height */
+  width: 100vw;
+  background-color: rgb(17, 16, 16);
+  overflow-x: hidden;
 }
 
 code {
